@@ -1,0 +1,439 @@
+/* Mobile devices */
+@media screen and (max-width: 575px) { 
+    /* Header */
+    .navbar { 
+        justify-content: end; 
+    } 
+
+    .menu { 
+		position: absolute; 
+		right: 0; 
+		top: 0; 
+        width: 75%;
+        height: 100vh;
+        padding: 0;
+        z-index: 2; 
+        background-color: rgb(13,48,72);
+        display: block; 
+        transform: translateX(100%);
+        transition: transform 0.1s;
+
+	} 
+
+    .menu.open {
+        transform: translateX(0); 
+    }
+
+	.menu-list { 
+        height: 75vh;
+		flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+	} 
+
+    .menu-list-items {
+        margin-bottom: 25px;
+        text-align: center ;
+    }
+
+    .arrows { 
+		display: block; 
+        position: fixed;
+		padding: 0 1.5rem; 
+        z-index: 3;
+	}
+
+    .close-menu {
+        display: none;
+    }
+
+    .logo { 
+        display: none;
+        position: fixed;
+        top: 0.25rem;
+        left: 2rem;
+        padding: 0;
+	} 
+
+    #overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        backdrop-filter: blur(5px);
+        z-index: 1;
+    }
+
+
+    /* Main */
+    .hero .intro { 
+        padding: 30px;
+    } 
+
+    .headings h1 {
+        font-size: 36px;
+    }
+
+    .sub-heading.desktop {
+        display: none;
+    }
+
+    .sub-heading.mobile {
+        display: block;
+    }
+
+	.hero .intro-buttons { 
+		gap: 20px; 
+	} 
+
+	.btn { 
+		padding: 10px 30px; 
+	} 
+
+
+    /* About */
+    .about .about-content {
+        flex-direction: column;
+        padding: 30px;
+    }
+    
+    .about-text p {
+        padding: 0;
+    }
+
+
+    /* Skills */
+    .skills .skills-content {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .skills .my-row { 
+        flex-direction: column;
+        gap: 5px;
+    } 
+
+    .skill-card {
+        margin-bottom: 20px;
+        width: calc(100vw - 90px);
+        padding: 15px;
+    }
+
+    .skill-card ul {
+        margin: 5px 0;
+    }
+
+
+    /* Portfolio */
+    .portfolio {
+        height: auto; 
+        scroll-margin-top: 0;
+    }
+    
+    .portfolio-content {
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .portfolio-content .my-heading {
+        padding: 0;
+    }
+
+    .port-card { 
+        display: flex; 
+        flex-direction: column-reverse; 
+        padding: 0; 
+        align-items: start; 
+    } 
+
+    .port-card .image { 
+        margin: 0; 
+        max-width: 200px; 
+        min-width: 200px;
+    } 
+
+    .port-card .image img { 
+        border: 2px solid rgba(255, 255, 255, 0.1); 
+    } 
+
+    .port-card .image h1 { 
+        font-size: 16px;
+        padding: 42.5px 0;
+        border: 2px solid rgba(255, 255, 255, 0.1); 
+    } 
+
+    .port-card .content {
+        padding: 0; 
+    }
+
+    .small-para span {
+        font-size: 12px;
+    }
+
+
+    /* Contact */
+    .contact-content { 
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .contact-form { 
+        display: none; 
+    } 
+
+    .contact .my-heading {
+        margin: 0 0 20px 0;
+        text-align: left;
+    }
+
+    .contact .greet-heading {	
+        margin-bottom: 20px; 
+        text-align: left;
+        font-weight: 400;
+    }
+
+    .mobile-email-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
+    .contact-form-container { 
+        width: 100%;
+        align-items: center;
+    } 
+
+    .fa-envelope {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    /* Utility classes */
+    .sticky-heading {
+        position: sticky;
+        top: 0;
+    }
+
+    .heading-container {
+        height: 57.5px;
+        width: calc(100vw - 60px);
+        display: flex;
+        align-items: center;
+        z-index: 1 !important;
+        background-color: rgb(15 23 42);     
+    }
+}
+
+
+/* Tablet devices */
+@media screen and (min-width: 576px) and (max-width: 1024px) { 
+    /* Header */
+    .logo { 
+        padding: 0 0 0 4rem; 
+    } 
+
+    .menu { 
+        padding: 0 3rem 0 0; 
+    } 
+
+    /* Main */
+    .hero .intro { 
+        padding: 0 60px;
+    } 
+
+    /* About */
+    .about-content {
+        padding: 0 60px;
+    }
+
+    /* Skills */
+    .skills-content {
+        padding: 0 60px;
+    }
+
+    /* Portfolio */
+    .portfolio-content {
+        padding: 0 60px;
+    }
+
+    .portfolio-content .my-heading {
+        margin-bottom: 20px;
+    }
+
+    .port-card { 
+        flex-direction: column-reverse; 
+        align-items: start; 
+    } 
+
+    .port-card .content {
+        padding: 0; 
+    }
+
+    /* Contact */
+    .contact-content {
+        padding: 0 60px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 875px) { 
+        /* Skills */
+        .skills-content {
+            flex-direction: column;
+        }
+
+        .skills-content h1 {
+            margin-bottom: 30px;
+        }
+
+        .skills-content .my-row { 
+            width: 100%;
+            display: flex; 
+            flex-grow: 1;
+        } 
+
+        /* Portfolio */
+        .portfolio-content {
+            flex-direction: column;
+        }
+
+        .port-card { 
+            padding: 0; 
+        } 
+
+        .port-card .content {
+            padding: 0; 
+        }
+
+        /* Contact */
+        .contact-content { 
+            flex-direction: column;
+        }
+
+        .contact .my-heading {
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        .contact .greet-heading {	
+            margin-bottom: 40px; 
+        }
+
+        .contact-form-container { 
+            width: 100%; 
+            align-items: center;
+        } 
+
+        .name-email-container {
+            flex-direction: column; 
+            width: 100%;
+        }
+
+        .name-email-container .form-group {
+            width: 100%;
+        }
+
+        .message-form-group {
+            width: 100%;
+        }
+}
+
+@media screen and (min-width: 576px) and (max-width: 715px) { 
+    /* Header */
+    .navbar { 
+        justify-content: end; 
+    } 
+
+    .menu { 
+        position: absolute; 
+        right: 0; 
+        top: 0; 
+        width: 60%;
+        height: 100vh;
+        padding: 0;
+        z-index: 2; 
+        background-color: rgb(13,48,72);
+        display: block; 
+        transform: translateX(100%);
+        transition: transform 0.1s;
+
+    } 
+
+    .menu.open {
+        transform: translateX(0); 
+    }
+
+    .menu-list { 
+        height: 75vh;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    } 
+
+    .menu-list-items {
+        margin-bottom: 25px;
+        text-align: center ;
+    }
+
+    .arrows { 
+        display: block; 
+        position: fixed;
+        padding: 0 1.5rem; 
+        z-index: 3;
+    }
+
+    .close-menu {
+        display: none;
+    }
+
+    .logo { 
+        display: none;
+        position: fixed;
+        top: 0.25rem;
+        left: 2rem;
+        padding: 0;
+    } 
+
+    #overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        backdrop-filter: blur(5px);
+        z-index: 1;
+    }
+
+    /* Skills */
+    .my-row { 
+        flex-wrap: wrap;
+    } 
+
+    .skill-card {
+        min-width: 170px;
+    }
+
+    /* Portfolio */
+    .portfolio {
+        scroll-margin-top: 0;
+    }
+}
+
+
+/* Smaller desktops */
+@media screen and (min-width: 1025px) and (max-width: 1175px) { 
+    /* Portfolio */
+    .port-card { 
+        flex-direction: column-reverse; 
+        align-items: start; 
+    } 
+
+    .port-card .content {
+        padding: 0; 
+    }
+}

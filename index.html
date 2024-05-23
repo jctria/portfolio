@@ -1,0 +1,293 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0"> 
+	<title>My Portfolio</title> 
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+	<link rel="stylesheet" href="style.css"> 
+	<link rel="stylesheet" href="responsive.css"> 
+</head> 
+
+<body> 
+	<!-- Navbar header section -->
+	<header class="header"> 
+		<nav class="navbar"> 
+			<div class="logo"> 
+                <a href="#home">
+				    <h2 class="logo-heading">JT</h2> 
+                </a>
+			</div> 
+			<div class="arrows" id="arrows"> 
+				<i class="fa-solid fa-chevron-left open-menu"></i>
+				<i class="fa-solid fa-chevron-right close-menu"></i> 			
+			</div> 
+			<div class="menu"> 
+				<ul class="menu-list"> 
+                    <li class="menu-list-items"> 
+						<a class="links" href="#about"> 
+							ABOUT 
+						</a> 
+					</li> 
+                    <li class="menu-list-items"> 
+						<a class="links" href="#skills"> 
+							SKILLS
+						</a> 
+					</li> 
+					<li class="menu-list-items"> 
+						<a class="links" href="#portfolio"> 
+							PROJECTS
+						</a> 
+					</li> 
+					<li class="menu-list-items"> 
+						<a class="links" href="#contact"> 
+							CONTACT
+						</a> 
+					</li> 
+				</ul> 
+			</div> 
+		</nav> 
+	</header> 
+
+	<!-- Main hero banner -->
+	<section id="home" class="hero"> 
+		<div class="intro"> 
+			<div class="headings"> 
+				<h3 class="greet-heading">Hello, I'm</h3> 
+				<h1>John Tria.</h1> 
+				<h1 class="grey">A Front-End Web Developer.</h1>
+				<h4 class="sub-heading desktop"> 
+					I am passionate about building aesthetically pleasing, functional and 
+					<br> 
+					interactive web applications to enhance user experiences.
+				</h4> 
+				<h4 class="sub-heading mobile"> 
+					I am passionate about building aesthetically pleasing, functional and interactive web applications to enhance user experiences.
+				</h4> 
+			</div> 
+			<div class="intro-buttons"> 
+				<button class="btn common-btn hire-me-btn">Hire Me</button> 
+				<button class="btn ghost-btn">Get Resume</button> 
+			</div> 
+			<div class="social-links"> 
+				<a class="social-link" href="https://github.com/jctria" target="_blank"> 
+					<i class="fab fa-github"></i> 
+				</a> 
+				<a class="social-link" href="https://www.linkedin.com/in/john-tria-3564021a0" target="_blank"> 
+					<i class="fab fa-linkedin"></i> 
+				</a> 
+			</div> 
+		</div> 
+	</section> 
+
+    <!-- About Section -->
+	<section id="about" class="about"> 
+		<div class="about-content">
+			<div class="heading-container"> 
+				<h1 class="my-heading">ABOUT</h1> 
+			</div>
+			<div class="about-text"> 
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Gravida dictum fusce ut placerat orci nulla. Suspendisse sed nisi lacus sed viverra tellus in.
+					<br/>
+					<br/>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<br/>
+					<br/>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare arcu dui vivamus arcu felis.
+				</p>
+			</div> 
+		</div>
+	</section> 
+
+    <!-- Skills Section -->
+	<section id="skills" class="skills"> 
+		<div class="skills-content"> 
+			<div class="heading-container"> 
+				<h1 class="my-heading">SKILLS</h1> 
+			</div> 
+			<div class="my-row"> 
+				<div class="my-col"> 
+					<div class="skill-card"> 
+						<h3 class="greet-heading">LANGUAGES</h3> 
+							<ul>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>Javascript (ES6)</li>
+							</ul>
+					</div> 
+				</div> 
+				<div class="my-col"> 
+					<div class="skill-card"> 
+						<h3 class="greet-heading">FRAMEWORKS</h3> 
+							<ul>
+								<li>React</li>
+								<li>Node.js</li>
+								<li>Express.js</li>
+							</ul>
+					</div> 
+				</div> 
+				<div class="my-col"> 
+					<div class="skill-card"> 
+						<h3 class="greet-heading">TOOLS</h3> 
+							<ul>
+								<li>Git & Github</li>
+								<li>Chrome Dev Tools</li>
+								<li>Postman</li>
+								<li>MongoDB</li>
+							</ul>
+					</div> 
+				</div> 
+			</div> 
+		</div> 
+	</section> 
+
+	<!-- Portfolio Section -->
+	<section class="portfolio" id="portfolio"> 
+		<div class="portfolio-content"> 
+			<div class="heading-container"> 
+				<h1 class="my-heading">PROJECTS</h1> 
+			</div>
+			<div class="rows-containter">
+				<div class="my-row"> 
+					<a href="https://aqueous-woodland-64750-32bd87afa332.herokuapp.com/" class="port-card greet-heading-link" target="_blank">
+						<div class="image"> 
+							<img src="./images/todolistApp.png" alt="To-Do List App Image"> 
+						</div> 
+						<div class="content">
+							<div class="card-heading-container">
+								<h3 class="greet-heading">To-Do List App <i class="fa-solid fa-arrow-up-right-from-square"></i></h3>
+								<div class="github-link" data-url="https://github.com/jctria/MERN-todo-list">
+									<i class="fab fa-github"></i>
+								</div>							
+							</div>							
+							<p class="small-para">A to-do list web app with authentication. Users can add, edit, and delete todos, as well as create different lists. Todos can be filtered based on the list or whether they are scheduled or flagged, and sorted based on the due date and priority level.</p> 
+							<p class="small-para">
+								<span>HTML</span> 
+								<span>CSS</span> 
+								<span>JavaScript</span> 
+								<span>React</span> 
+								<span>Node.js</span> 
+								<span>Express</span> 
+								<span>MongoDB</span>
+								<span>Redux</span>
+								<span>Heroku</span>
+							</p>
+						</div>
+					</a>
+				</div> 
+				<div class="my-row"> 
+					<a href="https://rocky-stream-05163-e377bc0db441.herokuapp.com/" class="port-card greet-heading-link" target="_blank">
+						<div class="image"> 
+							<img src="./images/ecommerceApp.png" alt="E-commerce App Image"> 
+						</div> 
+						<div class="content">
+							<div class="card-heading-container">
+								<h3 class="greet-heading">SSENSE Clone <i class="fa-solid fa-arrow-up-right-from-square"></i></h3>
+								<div class="github-link" data-url="https://github.com/jctria/MERN-e-commerce">
+									<i class="fab fa-github"></i>
+								</div>								
+							</div>							
+							<p class="small-para">A frontend clone of the multi-brand retailer SSENSE e-commerce platform. Backend coming soon.</p> 
+							<p class="small-para">
+								<span>HTML</span> 
+								<span>CSS</span> 
+								<span>JavaScript</span> 
+								<span>Bootstrap</span>
+								<span>React</span> 
+								<span>Node.js</span> 
+								<span>Express</span> 
+								<span>MongoDB</span>
+							</p>
+						</div>
+					</a>
+				</div> 
+				<div class="my-row"> 
+					<a class="port-card greet-heading-link">
+						<div class="image text-center"> 
+							<h1>Under Development . . .</h1>
+						</div> 
+						<div class="content">
+							<div class="card-heading-container">
+								<h3 class="greet-heading">Real-Time Chat App <i class="fa-solid fa-arrow-up-right-from-square"></i></h3>
+								<i class="fab fa-github"></i>
+							</div>	
+							<p class="small-para">A web application where users can chat with others in real time. Users can create an account, where they can choose a username and upload a profile picture, or sign in as a guest. Direct message and groupchat functionality with online status.</p> 
+							<p class="small-para">
+								<span>React</span> 
+								<span>Tailwind CSS</span> 
+								<span>Node.js</span> 
+								<span>Express</span> 
+								<span>MongoDB</span> 
+							</p>
+						</div>
+					</a>
+				</div> 
+				<!-- <div class="my-row"> 
+					<a href="" class="port-card greet-heading-link">
+						<div class="image text-center"> 
+							<h1>Under Development . . .</h1>
+						</div> 
+						<div class="content">
+							<h3 class="greet-heading">Loyalty App <i class="fa-solid fa-arrow-up-right-from-square"></i></h3>
+							<p class="small-para">A mobile web app to serve as a mock loyalty program for Tao Tea Leaf, a Toronto-based tea retailer. Customers can earn and redeem points after every purchase. User interface includes tabs to view points and customer level, add and manage cards (digital gift card with barcode to scan in store, link physical gift card, payment method), birthday rewards, app settings and more. Includes progressive web app features (e.g. add to home screen, push notifications).</p> 
+							<p class="small-para">
+								<span>GrapesJS</span> 
+								<span>React</span> 
+								<span>Node.js</span> 
+								<span>Material UI</span> 
+								<span>Tailwind CSS</span> 
+								<span>Flutter</span> 
+								<span>Express</span> 
+								<span>MongoDB</span> 
+							</p>
+						</div>
+					</a>
+				</div>  -->
+			</div>
+		</div> 
+	</section> 
+
+	<!-- Contact me section -->
+	<section class="contact" id="contact"> 
+		<div class="contact-content"> 
+			<h1 class="my-heading text-center">CONTACT</h1> 
+			<div class="contact-form-container"> 
+				<h1 class="greet-heading desktop">Want to get in touch? Send me a message!</h1> 
+				<form class="contact-form"> 
+					<span class="name-email-container">
+						<div class="form-group">
+							<input id="name" class="form-controls" type="text" placeholder="Enter your name"> 
+							<label for="name">Your Name</label>
+						</div>
+						<div class="form-group">
+							<input id="email" class="form-controls" type="text" placeholder="Enter your email address"> 
+							<label for="email">Email Address</label>
+						</div>
+					</span>
+					<div class="message-form-group">
+						<textarea id="message" class="form-controls" placeholder="Write your message" name="message" id="" cols="30" rows="3"></textarea> 
+						<label for="message">Your Message</label>
+					</div>
+					<input class="form-btn btn common-btn" type="submit" value="Submit"> 
+				</form> 
+				<button class="mobile-email-btn form-btn btn common-btn">Say Hello <i class="fa-regular fa-envelope"></i></button>
+			</div>
+		</div> 
+	</section> 
+
+	<div id="overlay"></div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+		integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"> 
+	</script> 
+	<script src="script/script.js"></script> 
+</body> 
+
+</html>
