@@ -231,9 +231,10 @@
         background-color: rgb(15 23 42);     
     }
 
-    .contact:focus-within:not(:focus) .common-btn {
+    .common-btn:not(:focus) {
         background-color: rgba(97, 218, 251, 0.2);
-        color: rgb(97, 218, 251);    }
+        color: rgb(97, 218, 251);    
+    }
 }
 
 
