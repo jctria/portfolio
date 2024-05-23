@@ -259,19 +259,23 @@
 			<h1 class="my-heading text-center">CONTACT</h1> 
 			<div class="contact-form-container"> 
 				<h1 class="greet-heading desktop">Want to get in touch? Send me a message!</h1> 
-				<form class="contact-form"> 
+				<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form"> 
+					<input type="hidden" name="form-name" value="contact">
+					<p style="display:none">
+						<label>Don’t fill this out if you're human: <input name="bot-field"></label>
+					</p>
 					<span class="name-email-container">
 						<div class="form-group">
-							<input id="name" class="form-controls" type="text" placeholder="Enter your name"> 
+							<input id="name" class="form-controls" type="text" name="name" placeholder="Enter your name" required> 
 							<label for="name">Your Name</label>
 						</div>
 						<div class="form-group">
-							<input id="email" class="form-controls" type="text" placeholder="Enter your email address"> 
+							<input id="email" class="form-controls" type="email" name="email" placeholder="Enter your email address" required> 
 							<label for="email">Email Address</label>
 						</div>
 					</span>
 					<div class="message-form-group">
-						<textarea id="message" class="form-controls" placeholder="Write your message" name="message" id="" cols="30" rows="3"></textarea> 
+						<textarea id="message" class="form-controls" name="message" placeholder="Write your message" cols="30" rows="3" required></textarea> 
 						<label for="message">Your Message</label>
 					</div>
 					<input class="form-btn btn common-btn" type="submit" value="Submit"> 
@@ -279,7 +283,7 @@
 				<button class="mobile-email-btn form-btn btn common-btn">Say Hello <i class="fa-regular fa-envelope"></i></button>
 			</div>
 		</div> 
-	</section> 
+	</section>
 
 	<div id="overlay"></div>
 
