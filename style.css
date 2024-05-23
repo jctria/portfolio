@@ -452,9 +452,17 @@ a[data-hs-anchor="true"] {
 	background-color: transparent;
 	border: none;
     border-bottom: 1px solid rgb(148 163 184);
-	font-size: 14px;
+	font-size: 13.35px;
 	color: white;
 } 
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px rgb(15 23 42) inset !important; 
+  -webkit-text-fill-color: #fff !important; /* Adjust text color if necessary */
+}
 
 label {
     display: block;
@@ -534,18 +542,6 @@ input:focus + label, textarea:focus + label {
 } 
 
 .common-btn:hover { 
-	background-color: rgb(97, 218, 251);
-	color: #fff; 
-	transition: all 0.25s; 
-} 
-
-.ghost-btn { 
-	background-color: rgba(97, 218, 251, 0.2);
-	color: rgb(97, 218, 251);
-	outline: none; 
-} 
-
-.ghost-btn:hover { 
 	background-color: rgb(97, 218, 251);
 	color: #fff; 
 	transition: all 0.25s; 
