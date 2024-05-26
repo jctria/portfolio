@@ -83,6 +83,7 @@ a[data-hs-anchor="true"] {
 /* Main Hero Section Styles */
 .hero { 
 	height: 100vh;
+	min-height: 430px;
 	display: flex; 
 	align-items: center; 
 	justify-content: center;

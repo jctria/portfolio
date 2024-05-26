@@ -130,3 +130,18 @@ document.addEventListener('DOMContentLoaded', () => {
         closeMenu();
     });
 });
+
+// Remove focus in mobile
+document.addEventListener('click', function(event) {
+    const selectors = ['.common-btn', '.social-link'];
+
+    const clickedElementIsInteractive = selectors.some(selector => event.target.matches(selector));
+
+    if (!clickedElementIsInteractive) {
+        selectors.forEach(selector => {
+            document.querySelectorAll(selector).forEach(element => {
+                element.blur();
+            });
+        });
+    }
+});
