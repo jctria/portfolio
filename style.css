@@ -258,7 +258,7 @@ a[data-hs-anchor="true"] {
 /* Skills section styles */
 .skills { 
 	height: 100vh; 
-	min-height: 475px;
+	min-height: 500px;
 	display: flex; 
 	align-items: center; 
 	border-bottom: 1px solid white;
@@ -300,7 +300,7 @@ a[data-hs-anchor="true"] {
 	border-radius: 10px;
 	text-align: left;
 	padding: 15px 20px;
-	font-size: 14px;
+	font-size: 14px !important;
 }
 
 .skill-card:hover {
@@ -442,6 +442,7 @@ a[data-hs-anchor="true"] {
 
 .portfolio-content p {
 	color: rgb(148 163 184);
+	font-size: 14px;
 }
 
 .small-para span {
@@ -461,7 +462,7 @@ a[data-hs-anchor="true"] {
 	align-items: center; 
 	justify-content: center; 
 	height: 100vh; 
-	min-height: 500px;
+	min-height: 525px;
 } 
 
 .contact-content { 
