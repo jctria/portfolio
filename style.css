@@ -31,6 +31,7 @@ body {
 
 .logo { 
 	padding: 0 5rem; 
+	opacity: 0;
 } 
 
 .logo .logo-heading { 
@@ -58,6 +59,7 @@ body {
 
 .menu-list .menu-list-items { 
 	padding: 0.5rem 1rem; 
+	opacity: 0;
 } 
  
 
@@ -79,11 +81,40 @@ a[data-hs-anchor="true"] {
 	border-bottom: 2px solid rgb(97, 218, 251) !important;
 }
 
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animation for the logo */
+.logo {
+    animation: fadeIn 1s forwards;
+}
+
+/* Animation for the menu items with staggered delays */
+.menu-list-items:nth-child(1) {
+    animation: fadeIn 1s forwards 0.2s;
+}
+.menu-list-items:nth-child(2) {
+    animation: fadeIn 1s forwards 0.4s;
+}
+.menu-list-items:nth-child(3) {
+    animation: fadeIn 1s forwards 0.6s;
+}
+.menu-list-items:nth-child(4) {
+    animation: fadeIn 1s forwards 0.8s;
+}
+
 
 /* Main Hero Section Styles */
 .hero { 
 	height: 100vh;
-	min-height: 430px;
+	min-height: 475px;
 	display: flex; 
 	align-items: center; 
 	justify-content: center;
@@ -98,18 +129,16 @@ a[data-hs-anchor="true"] {
 	line-height: 1;
 } 
 
-.sub-heading.mobile {
-	display: none;
-}
-
 .headings h1 {
 	font-size: 60px;
 	letter-spacing: 3px;
 	margin: 10px 0;
+	opacity: 0;
 }
 
 .headings .grey {
 	color: rgb(148 163 184);
+	opacity: 0;
 }
 
 .headings h3 {
@@ -118,14 +147,26 @@ a[data-hs-anchor="true"] {
 	font-size: 16px;
 	font-weight: 400;
 	margin-bottom: 25px;
+	opacity: 0;
 }
 
-.headings h4 {
+.sub-heading.desktop {
 	color: rgb(148 163 184);
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.5;
 	margin-top: 25px;
+	opacity: 0;
+}
+
+.sub-heading.mobile {
+	display: none;
+	color: rgb(148 163 184);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+	margin-top: 25px;
+	opacity: 0;
 }
 
 .hero .intro-buttons { 
@@ -133,16 +174,18 @@ a[data-hs-anchor="true"] {
 	display: flex; 
 	align-items: center; 
 	justify-content: flex-start; 
+	opacity: 0;
 } 
 
 .hero .intro-buttons button:not(:last-child) {
-    margin-right: 20px;  
+    margin-right: 25px;  
 }
 
 .intro .social-links { 
 	display: flex; 
 	align-items: center; 
     justify-content: flex-start;
+	opacity: 0;
 } 
 
 .social-link { 
@@ -159,10 +202,32 @@ a[data-hs-anchor="true"] {
 	color: rgb(255, 255, 255);
 }
 
+/* Animation for hero section elements with staggered delays */
+.hero .greet-heading {
+    animation: fadeIn 1s forwards 1s;
+}
+.hero h1:nth-of-type(1) {
+    animation: fadeIn 1s forwards 1.2s;
+}
+.hero h1.grey {
+    animation: fadeIn 1s forwards 1.4s;
+}
+.hero .sub-heading.desktop,
+.hero .sub-heading.mobile {
+    animation: fadeIn 1s forwards 1.6s;
+}
+.hero .intro-buttons {
+    animation: fadeIn 1s forwards 1.8s;
+}
+.hero .social-links {
+    animation: fadeIn 1s forwards 2s;
+}
+
 
 /* About Section Styles */
 .about {
 	height: 100vh; 
+	min-height: 400px;
 	display: flex; 
 	align-items: center; 
 	border-bottom: 1px solid white;
@@ -193,6 +258,7 @@ a[data-hs-anchor="true"] {
 /* Skills section styles */
 .skills { 
 	height: 100vh; 
+	min-height: 475px;
 	display: flex; 
 	align-items: center; 
 	border-bottom: 1px solid white;
@@ -252,6 +318,7 @@ a[data-hs-anchor="true"] {
 .skill-card h3 {
 	font-size: 16px;
 	margin-left: 0;
+	font-weight: 400;
 }
 
 
@@ -303,8 +370,16 @@ a[data-hs-anchor="true"] {
     align-items: center;
 }
 
+.card-heading-container .greet-heading {
+	font-weight: 400;
+}
+
 .port-card h3 {
     font-size: 16px; 
+}
+
+.port-card svg {
+	font-size: 14px;
 }
 
 .port-card svg:hover {
@@ -386,6 +461,7 @@ a[data-hs-anchor="true"] {
 	align-items: center; 
 	justify-content: center; 
 	height: 100vh; 
+	min-height: 500px;
 } 
 
 .contact-content { 

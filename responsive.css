@@ -87,12 +87,33 @@
     }
 
 	.hero .intro-buttons { 
-		gap: 20px; 
+		gap: 10px; 
 	} 
 
 	.btn { 
 		padding: 10px 30px; 
 	} 
+
+    /* Animation for hero section elements with staggered delays */
+    .hero .greet-heading {
+        animation: fadeIn 1s forwards 0.2s;
+    }
+    .hero h1:nth-of-type(1) {
+        animation: fadeIn 1s forwards 0.4s;
+    }
+    .hero h1.grey {
+        animation: fadeIn 1s forwards 0.6s;
+    }
+    .hero .sub-heading.desktop,
+    .hero .sub-heading.mobile {
+        animation: fadeIn 1s forwards 0.8s;
+    }
+    .hero .intro-buttons {
+        animation: fadeIn 1s forwards 1s;
+    }
+    .hero .social-links {
+        animation: fadeIn 1s forwards 1.2s;
+    }
 
 
     /* About */
