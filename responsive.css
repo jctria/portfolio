@@ -117,12 +117,16 @@
 
 
     /* About */
+    .about {
+        height: auto;
+    }
+
     .about .about-content {
         flex-direction: column;
         padding: 30px;
     }
     
-    .about-text p {
+    .about-text {
         padding: 0;
     }
 
@@ -271,16 +275,27 @@
     } 
 
     /* Main */
+    .hero {
+        height: 500px;
+    }
     .hero .intro { 
         padding: 0 60px;
     } 
 
     /* About */
+    .about {
+        height: 800px;
+    }
+
     .about-content {
         padding: 0 60px;
     }
 
     /* Skills */
+    .skills {
+        height: 500px;
+    }
+
     .skills-content {
         padding: 0 60px;
     }
@@ -288,6 +303,7 @@
     /* Portfolio */
     .portfolio-content {
         padding: 0 60px;
+        padding-top: 15px;
     }
 
     .portfolio-content .my-heading {
@@ -466,5 +482,15 @@
 
     .port-card .content {
         padding: 0; 
+    }
+}
+
+@media (orientation: landscape) {
+    .skill-card {
+      font-size: 14px; 
+    }
+
+    .portfolio-content p {
+        font-size: 14px;
     }
 }
