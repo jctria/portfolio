@@ -323,10 +323,6 @@
         padding: 0; 
     }
 
-    .portfolio-content .small-para p {
-        font-size: 14px !important;
-    }
-
     /* Contact */
     .contact-content {
         padding: 0 60px;
@@ -493,3 +489,9 @@
     }
 }
 
+
+@media screen and (orientation: landscape) {
+    .small-para {
+        font-size: 14px !important; 
+    }
+}
