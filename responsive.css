@@ -195,10 +195,6 @@
         padding: 0; 
     }
 
-    .portfolio-content p {
-        font-size: 2vw !important;
-    }
-
     .small-para span {
         font-size: 12px;
     }
@@ -327,8 +323,8 @@
         padding: 0; 
     }
 
-    .portfolio-content p {
-        font-size: 2vw !important;
+    .portfolio-content .small-para p {
+        font-size: 14px !important;
     }
 
     /* Contact */
