@@ -117,6 +117,7 @@ a[data-hs-anchor="true"] {
 	display: flex; 
 	align-items: center; 
 	justify-content: center;
+	border-bottom: 1px solid white;
 } 
 
 .hero .intro { 
@@ -226,6 +227,7 @@ a[data-hs-anchor="true"] {
 	height: 100vh; 
 	display: flex; 
 	align-items: center; 
+	border-bottom: 1px solid white;
 }
 
 .about-content {
@@ -276,6 +278,7 @@ a[data-hs-anchor="true"] {
 	height: 100vh; 
 	display: flex; 
 	align-items: center; 
+	border-bottom: 1px solid white;
 } 
 
 .skills-content {
@@ -326,6 +329,7 @@ a[data-hs-anchor="true"] {
     text-align: left; 
 	color: rgb(148 163 184);
 	line-height: 2;
+	font-size: 14px;
 }
 
 .skill-card h3 {
@@ -340,6 +344,7 @@ a[data-hs-anchor="true"] {
 	height: auto; 
 	display: flex; 
 	scroll-margin-top: 75px;
+	border-bottom: 1px solid white;
 } 
 
 .portfolio-content {
@@ -540,11 +545,18 @@ a[data-hs-anchor="true"] {
 	margin-bottom: 30px;
 	background-color: transparent;
 	border: none;
-	outline: none !important;
     border-bottom: 1px solid rgb(148 163 184);
 	font-size: 13.35px;
 	color: white;
 } 
+
+@media not all and (min-resolution:.001dpcm) { 
+	@supports (-webkit-appearance:none) {
+	  .form-controls {
+		outline: none; 
+	  }
+	}
+  }
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -646,7 +658,7 @@ input:focus + label, textarea:focus + label {
 } 
 
 .small-para { 
-	font-size: 14px; 
+	font-size: 14px !important; 
 	color: #fff; 
 } 
 

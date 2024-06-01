@@ -300,6 +300,10 @@
         padding: 0 60px;
     }
 
+    .skill-card {
+        font-size: 14px !important; 
+    }
+
     /* Portfolio */
     .portfolio-content {
         padding: 0 60px;
@@ -317,6 +321,10 @@
 
     .port-card .content {
         padding: 0; 
+    }
+
+    .portfolio-content p {
+        font-size: 14px !important;
     }
 
     /* Contact */
@@ -485,7 +493,7 @@
     }
 }
 
-@media (orientation: landscape) {
+/* @media (orientation: landscape) {
     .skill-card {
       font-size: 14px; 
     }
@@ -493,4 +501,4 @@
     .portfolio-content p {
         font-size: 14px !important;
     }
-}
+} */
