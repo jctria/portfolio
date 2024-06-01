@@ -490,8 +490,3 @@
 }
 
 
-@media screen and (orientation: landscape) {
-    .small-para {
-        font-size: 14px !important; 
-    }
-}

@@ -662,7 +662,8 @@ input:focus + label, textarea:focus + label {
 .small-para { 
 	font-size: 14px; 
 	color: #fff; 
-} 
+	-webkit-text-size-adjust: 100%; 
+}
 
 .white-text { 
 	color: #fff; 
