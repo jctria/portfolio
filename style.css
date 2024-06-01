@@ -459,6 +459,7 @@ a[data-hs-anchor="true"] {
 
 .portfolio-content p {
 	color: rgb(148 163 184);
+	font-size: 1vw !important;
 }
 
 .small-para span {
@@ -554,6 +555,8 @@ a[data-hs-anchor="true"] {
 	@supports (-webkit-appearance:none) {
 	  .form-controls {
 		outline: none; 
+		box-shadow: none;
+		border-top: none;
 	  }
 	}
   }
@@ -658,7 +661,7 @@ input:focus + label, textarea:focus + label {
 } 
 
 .small-para { 
-	font-size: 14px !important; 
+	font-size: 14px; 
 	color: #fff; 
 } 
 

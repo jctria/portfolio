@@ -323,10 +323,6 @@
         padding: 0; 
     }
 
-    .portfolio-content p {
-        font-size: 14px !important;
-    }
-
     /* Contact */
     .contact-content {
         padding: 0 60px;
@@ -493,12 +489,3 @@
     }
 }
 
-/* @media (orientation: landscape) {
-    .skill-card {
-      font-size: 14px; 
-    }
-
-    .portfolio-content p {
-        font-size: 14px !important;
-    }
-} */
