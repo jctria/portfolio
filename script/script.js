@@ -39,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const sectionBottom = sectionTop + section.offsetHeight; 
             if (window.scrollY >= sectionTop - window.innerHeight * 0.5 && window.scrollY < sectionBottom) {
                 currentActiveIndex = index;
-                console.log(currentActiveIndex);
             }
         });
 
@@ -144,4 +143,34 @@ document.addEventListener('click', function(event) {
             });
         });
     }
+});
+
+// Toggle skill icons
+function toggleIcons(card) {
+    card.classList.toggle('clicked');
+}
+
+// Toggle border shadow to indicate sections
+document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll('.section');
+    
+    function toggleBorder() {
+        const viewportHeight = window.innerHeight;
+        const viewportMiddleStart = viewportHeight * 0.4; 
+        const viewportMiddleEnd = viewportHeight * 0.6; 
+
+        sections.forEach(section => {
+            const intersection = section.getBoundingClientRect().bottom;
+
+            console.log(intersection)
+            if (intersection >= viewportMiddleStart && intersection <= viewportMiddleEnd) {
+                section.classList.add('shadow');
+            } else {
+                section.classList.remove('shadow');
+            }
+        });
+    }
+
+    // Check on scroll
+    window.addEventListener('scroll', toggleBorder);
 });

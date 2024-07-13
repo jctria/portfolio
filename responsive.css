@@ -34,7 +34,7 @@
 
     .menu-list-items {
         margin-bottom: 25px;
-        text-align: center ;
+        text-align: center;
     }
 
     .arrows { 
@@ -70,6 +70,11 @@
 
 
     /* Main */
+    .hero {
+        height: auto;
+        padding: 20px 0 20px 0;
+    }
+
     .hero .intro { 
         padding: 30px;
     } 
@@ -78,12 +83,8 @@
         font-size: 36px;
     }
 
-    .sub-heading.desktop {
-        display: none;
-    }
-
-    .sub-heading.mobile {
-        display: block;
+    .sub-heading .break {
+        display: inline;
     }
 
 	.hero .intro-buttons { 
@@ -104,8 +105,7 @@
     .hero h1.grey {
         animation: fadeIn 1s forwards 0.6s;
     }
-    .hero .sub-heading.desktop,
-    .hero .sub-heading.mobile {
+    .hero .sub-heading {
         animation: fadeIn 1s forwards 0.8s;
     }
     .hero .intro-buttons {
@@ -119,6 +119,7 @@
     /* About */
     .about {
         height: auto;
+        padding-bottom: 20px;
     }
 
     .about .about-content {
@@ -132,6 +133,10 @@
 
 
     /* Skills */
+    .skills {
+        height: auto;
+    }
+    
     .skills .skills-content {
         flex-direction: column;
         padding: 30px;
@@ -203,8 +208,17 @@
         margin-bottom: 45px;
     }
 
+    .portfolio .my-row:last-child {
+        margin-bottom: 10px;
+    }
+
 
     /* Contact */
+    .contact {
+        height: auto;
+        padding: 20px 0 20px 0;
+    }
+
     .contact-content { 
         flex-direction: column;
         padding: 30px;
@@ -222,7 +236,10 @@
     .contact .greet-heading {	
         margin-bottom: 20px; 
         text-align: left;
-        font-weight: 400;
+    }
+
+    .contact .sub-heading {
+        width: 100%;
     }
 
     .email-btn-link {
@@ -234,6 +251,7 @@
         justify-content: center;
         align-items: center;
         width: 100%;
+        margin-top: 5px;
     }
 
     .contact-form-container { 
@@ -259,8 +277,20 @@
         align-items: center;
         z-index: 1 !important;
         background-color: rgb(15 23 42);     
+        opacity: 95%;
     }
 }
+
+@media screen and (max-width: 932px) and (orientation: landscape) {
+    .hero {
+        height: 615px;
+    }
+
+    .contact {
+        height: 615px;
+    } 
+}
+
 
 
 /* Tablet devices */
@@ -275,9 +305,6 @@
     } 
 
     /* Main */
-    .hero {
-        height: 500px;
-    }
     .hero .intro { 
         padding: 0 60px;
     } 
@@ -293,7 +320,7 @@
 
     /* Skills */
     .skills {
-        height: 500px;
+        height: 600px;
     }
 
     .skills-content {
@@ -305,6 +332,10 @@
     }
 
     /* Portfolio */
+    .portfolio {
+        height: auto;
+    }
+
     .portfolio-content {
         padding: 0 60px;
         padding-top: 15px;
@@ -330,6 +361,11 @@
 }
 
 @media screen and (min-width: 576px) and (max-width: 875px) { 
+        /* About */
+        .about {
+            scroll-margin-top: 75px;
+        }
+
         /* Skills */
         .skills-content {
             flex-direction: column;
@@ -365,11 +401,15 @@
 
         .contact .my-heading {
             text-align: left;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
         .contact .greet-heading {	
-            margin-bottom: 40px; 
+            margin-bottom: 20px; 
+        }
+
+        .contact .sub-heading {
+            width: 100%;
         }
 
         .contact-form-container { 
@@ -458,6 +498,11 @@
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px); /* Safari */
         z-index: 1;
+    }
+
+    /* Main */
+    .sub-heading .break {
+        display: inline;
     }
 
     /* Skills */
