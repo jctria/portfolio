@@ -381,7 +381,8 @@ a[data-hs-anchor="true"] {
     gap: 40px;
 }
 
-.fa-html5:hover {
+.fa-html5:hover,
+.fa-html5:focus {
 	color: darkorange;
 }
 
@@ -410,7 +411,7 @@ a[data-hs-anchor="true"] {
 	color: orangered;
 }
 
-.fa-github:hover {
+.skills .fa-github:hover {
 	color: black;
 }
 
