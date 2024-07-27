@@ -30,9 +30,9 @@ arrows.addEventListener('click', function () {
 	} 
 });
 
-// Underline current section in navbar/ nav menu
+// Underline current section in navbar/ navmenu
 document.addEventListener('DOMContentLoaded', () => {
-    function changeLinkState() {
+    function currentSection() {
         let currentActiveIndex = -1; 
         sections.forEach((section, index) => {
             const sectionTop = section.offsetTop;
@@ -53,8 +53,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    window.addEventListener('scroll', changeLinkState);
-    changeLinkState(); 
+    window.addEventListener('scroll', currentSection);
+    currentSection(); 
 });
 
 // Toggle sticky section headings
@@ -171,6 +171,5 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // Check on scroll
     window.addEventListener('scroll', toggleBorder);
 });

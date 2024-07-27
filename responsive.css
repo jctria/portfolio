@@ -281,7 +281,6 @@
 }
 
 
-
 /* Tablet devices */
 @media screen and (min-width: 576px) and (max-width: 1024px) { 
     /* Header */
@@ -522,5 +521,3 @@
         padding: 0; 
     }
 }
-
-
