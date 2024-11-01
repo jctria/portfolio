@@ -397,6 +397,10 @@ a[data-hs-anchor="true"] {
 	color: yellowgreen;
 }
 
+.fa-bootstrap:hover {
+	color: blueviolet;
+}
+
 .express-text:hover,
 .express-text:hover .fa-js {
     color: yellow; 
