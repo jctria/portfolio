@@ -434,9 +434,11 @@ a[data-hs-anchor="true"] {
 	scroll-margin-top: 75px;
 } 
 
-#portfolio {
-	padding-bottom: 8rem; 
-  }
+@media (min-width: 768px) {
+	#portfolio {
+	  padding-bottom: 10rem; 
+	}
+}
 
 .portfolio-content {
 	padding: 0 11rem 0 11rem;
